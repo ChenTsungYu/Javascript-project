@@ -7,7 +7,14 @@ const search = document.getElementById("search");
 const feedback = document.querySelector(".feedback");
 
 const base = "https://en.wikipedia.org/w/api.php";
+// 原始網址會有同源政策問題
+//const url = "?action=query&format=json&list=search&srsearch=";
+
+// 解決跨域問題    &origin=*
 const url = "?action=query&format=json&origin=*&list=search&srsearch=";
+
+
+
 
 searchForm.addEventListener('submit', event => {
   event.preventDefault();
@@ -22,21 +29,54 @@ searchForm.addEventListener('submit', event => {
   }
 
 })
-function showFeedback(text){
-    feedback.classList.add('showItem');
-    feedback.innerHTML = `<p>${text}</p>`;
+function showFeedback(text) {
+  feedback.classList.add('showItem');
+  feedback.innerHTML = `<p>${text}</p>`;
 
-    setTimeout(()=>feedback.classList.remove('showItem'), 3000);
+  setTimeout(() => feedback.classList.remove('showItem'), 3000);
 }
 
 // ajaxWiki
 
-function ajaxWiki(search) { 
+function ajaxWiki(search) {
   // loading
+  output.innerHTML = "";
+  loading.classList.add("showItem");
+  //console.log(search);
+  const wikiURL = `${base}${url}${search}`;
+  // note
+  fetch(wikiURL)
+    .then(data => data.json())
+    .then(data => displayData(data))
+    .catch(e => console.log(e));
+}
 
-    output.innerHTML = "";
-    loading.classList.add("showItem");
-    console.log(search);
-    //output.innerHTML = ""
- }
+function displayData(data) {
+  loading.classList.remove('showItem');
+   console.log(data);
 
+  // note   找尋data內的query，賦值給search內的 results
+  const { search: results } = data.query;
+
+  let info = "";
+  results.forEach(result => {
+    // 將傳入的result分別賦值給觀察到的title, snippet,pageid:link
+    const { title, snippet, pageid: link } = result;
+    console.log(link);
+    
+    const pageID = "https://en.wikipedia.org/?curid="
+    info +=
+      `
+   <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <div class="card card-body">
+          <h1 class="card-title blueText">${title}</h1>
+          <p>${snippet}</p>
+          <a href="${pageID}${link}" target="_blank" class="my-2 text-capitalize">read
+            more...</a>
+        </div>
+      </div>
+   `
+  });
+output.innerHTML = info;
+
+}
