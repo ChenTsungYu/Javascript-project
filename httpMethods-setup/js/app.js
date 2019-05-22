@@ -8,15 +8,14 @@ const feedback = document.querySelector(".feedback");
 const submtiBtn = document.getElementById("submitBtn");
 let editedItemID = 0;
 
-
-
 let submitItem = event => { //  let 要放置在事件操作的前面
     event.preventDefault();
     const itemValue = itemInput.value;
     const imageValue = imageInput.value;
 
     // 務必要取得itemValue 的length，非 itemValue
-    if (itemValue.length === 0 || imageValue.length === 0) {
+    if (itemValue.length === 0 || imageValue.length === 0) { 
+        // 使用者未輸入值
         showFeedback("please enter vaild values");
     } else {
         postItemAPI(imageValue, itemValue);
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getItemsAPI(showItems)
 })
 
-// show feedback
+// show feedback (alert)
 let showFeedback = text => {
     feedback.classList.add('showItem');
     feedback.innerHTML = `<p>${text}</p/>`;
@@ -103,15 +102,23 @@ let postItemAPI = (img, itemName) => {
 
     ajax.open('POST', url, true);
 
-    ajax.setRequestHeader('content-type', 'application/x-www-form-urlencoded')
+    // 設定內容類型，POST要發送的資料會放在請求的本體中，告知發送的資料類型
+    // 發送表單類型資料
+    ajax.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
 
-    ajax.onload = () => {
+    //  預檢請求
+
+    // 使用 非同步，需監聽 load 事件(監聽事件)
+    // 讓 回應完成時 能執行相對應的函式 — 回調函式 (callback):
+    ajax.onload = () => { // 非同步取得回應
+       // Server 回應的是 XML 或 XHTML，使用 responseXML 屬性
         console.log(ajax.responseText);
         getItemsAPI(showItems);
     }
-
+ // 回傳錯誤訊息
     ajax.onerror = () => console.log('there is an error');
 
+    // 發送請求
     ajax.send(`avatar=${avatar}&name=${name}`);
 }
 // getIcons

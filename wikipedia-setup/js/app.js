@@ -10,11 +10,8 @@ const base = "https://en.wikipedia.org/w/api.php";
 // 原始網址會有同源政策問題
 //const url = "?action=query&format=json&list=search&srsearch=";
 
-// 解決跨域問題    &origin=*
+// 解決跨域問題(訪問控制允許來源)    &origin=*
 const url = "?action=query&format=json&origin=*&list=search&srsearch=";
-
-
-
 
 searchForm.addEventListener('submit', event => {
   event.preventDefault();
@@ -53,7 +50,7 @@ function ajaxWiki(search) {
 
 function displayData(data) {
   loading.classList.remove('showItem');
-   console.log(data);
+  console.log(data);
 
   // note   找尋data內的query，賦值給search內的 results
   const { search: results } = data.query;
@@ -63,7 +60,7 @@ function displayData(data) {
     // 將傳入的result分別賦值給觀察到的title, snippet,pageid:link
     const { title, snippet, pageid: link } = result;
     console.log(link);
-    
+
     const pageID = "https://en.wikipedia.org/?curid="
     info +=
       `
@@ -77,6 +74,5 @@ function displayData(data) {
       </div>
    `
   });
-output.innerHTML = info;
-
+  output.innerHTML = info;
 }
