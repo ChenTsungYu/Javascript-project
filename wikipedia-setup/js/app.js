@@ -43,7 +43,7 @@ function ajaxWiki(search) {
   const wikiURL = `${base}${url}${search}`;
   // note
   fetch(wikiURL)
-    .then(data => data.json())
+    .then(data => data.json()) // JSON解析
     .then(data => displayData(data))
     .catch(e => console.log(e));
 }
@@ -52,9 +52,9 @@ function displayData(data) {
   loading.classList.remove('showItem');
   console.log(data);
 
-  // note   找尋data內的query，賦值給search內的 results
+  // note   找尋data內query的所有物件，賦值給search內的 results
   const { search: results } = data.query;
-
+  console.log(results);
   let info = "";
   results.forEach(result => {
     // 將傳入的result分別賦值給觀察到的title, snippet,pageid:link

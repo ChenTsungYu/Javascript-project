@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffc914;
+  --grey: #b5c2b7;
+  --black: rgb(46, 40, 42);
+  --blue: #00a7e1;
+  --cream: #eddea4;
+  --white: rgb(245, 243, 245);
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background: var(--white);
+  color: var(--black);
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.header {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*   for the rest of the elements   */
+  position: relative;
+  /*   video   */
+}
+.header .banner {
+  margin-left: 2rem;
+  border-left: 0.5rem solid var(--yellow);
+}
+.header .banner__title {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  /* 字母間的間距 */
+  margin-left: 1rem;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.header .banner__title__name {
+  color: var(--yellow);
+  font-size: 4rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.header .video__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.header .video__item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.header .video__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 243, 245, 0.3);
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background: url("../video/Working-it/Snapshots/Working-it.jpg") center/cover
+      fixed no-repeat;
+  }
+}
