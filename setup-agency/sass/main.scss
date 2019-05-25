@@ -630,15 +630,61 @@ body {
     &__icon {
         font-size: 4rem;
     }
+
     &__data {
         font-size: 1.5rem;
         margin: 1rem 0;
-      }
-&__name {
-    text-transform: uppercase;
-  }
+    }
+
+    &__name {
+        text-transform: uppercase;
+    }
+}
+
+// team
+.team {
+    &-img {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+
+        &__item {
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            opacity: 1;
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+            border: 0.3rem solid transparent;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &-info {
+        width: 80%;
+        margin: 4rem auto 2rem auto;
+        background: var(--cream);
+        color: var(--black);
+        position: relative;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+
+        &__img {
+            display: block;
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+    }
 
 
+}
+
+.active {
+    border-color: var(--blue);
 }
 
 
@@ -730,14 +776,16 @@ body {
             align-self: center;
         }
     }
-    .numbers{
+
+    .numbers {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-      }
-      .number{
-        flex:0 0 50%
-      }
+    }
+
+    .number {
+        flex: 0 0 50%
+    }
 
 }
 
@@ -749,9 +797,10 @@ body {
     .project {
         flex: 0 0 25%;
     }
-    .number{
-        flex:0 0 25%
-      }
+
+    .number {
+        flex: 0 0 25%
+    }
 }
 
 @keyframes pulseScale {

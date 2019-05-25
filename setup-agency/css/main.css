@@ -560,6 +560,46 @@ body {
   .number__name {
     text-transform: uppercase; }
 
+.team-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 2rem; }
+  .team-img__item {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    border: 0.3rem solid transparent;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+
+.team-info {
+  width: 80%;
+  margin: 4rem auto 2rem auto;
+  background: var(--cream);
+  color: var(--black);
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4); }
+  .team-info__img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem; }
+
+.active {
+  border-color: var(--blue); }
+
 @media screen and (min-width: 576px) {
   .progress__img {
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
