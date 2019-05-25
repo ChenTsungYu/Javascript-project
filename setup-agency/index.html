@@ -10,7 +10,7 @@
     <!-- font awesome(SVG with js)   -->
     <script src="js/all.js"></script>
     <!-- magnific -->
-    <!-- <link rel="stylesheet" href="plugins/magnific/magnific-popup.css"> -->
+    <link rel="stylesheet" href="plugins/magnific/magnific-popup.css" />
     <!-- owl carousel css-->
     <!-- <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css"> -->
     <!--owl carousel theme  -->
@@ -21,175 +21,511 @@
     <div class="preloader">
       <img src="./img/preloader.gif" alt="" class="preloader_img" />
     </div>
-    <!-- header  -->
+    <!-- header -->
     <header class="header" id="home">
-        <!-- title -->
-        <article class="banner">
-          <h1 class="banner__title">we are
-            <span class="banner__title-name">agency</span>
-          </h1>
-        </article>
-        <!-- video -->
-        <div class="video__container">
-          <video class="video__item" id="video" autoplay loop>
-            <source src="video/Working-it/Mp4/Working-it.mp4" type="video/mp4">
-            <source src="video/Working-it/Ogv/Working-it.ogv" type="video/ogg">
-            <source src="video/Working-it/Webm/Working-it.webm" type="video/webm"> Your browser does not support the video tag.
-          </video>
+      <!-- title -->
+      <article class="banner">
+        <h1 class="banner__title">
+          we are
+          <span class="banner__title-name">agency</span>
+        </h1>
+      </article>
+      <!-- video -->
+      <div class="video__container">
+        <video class="video__item" id="video" autoplay loop>
+          <source src="video/Working-it/Mp4/Working-it.mp4" type="video/mp4" />
+          <source src="video/Working-it/Ogv/Working-it.ogv" type="video/ogg" />
+          <source
+            src="video/Working-it/Webm/Working-it.webm"
+            type="video/webm"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- video overlay -->
+      <div class="video__overlay"></div>
+      <!-- nav btn -->
+      <div class="navBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- nav -->
+      <nav class="nav">
+        <ul class="nav__links">
+          <li>
+            <a href="#home" class="nav__links-item">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a href="#home" class="nav__links-item">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav__links-item">Services</a>
+          </li>
+          <li>
+            <a href="#" class="nav__links-item">Skills</a>
+          </li>
+          <li>
+            <a href="#" class="nav__links-item">About</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- social icons -->
+      <div class="social-icons">
+        <a href="#" class="social-icon social-icon-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-icon social-icon-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon social-icon-instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <!-- video switch -->
+      <div class="video__switch-container">
+        <div class="video__switch">
+          <span>on</span>
+          <span>off</span>
+          <div class="video__switch-btn"></div>
         </div>
-        <!-- video overlay -->
-        <div class="video__overlay"></div>
-        <!-- nav btn -->
-        <div class="navBtn">
-          <i class="fas fa-bars"></i>
-        </div>
-        <!-- nav -->
-        <nav class="nav">
-          <ul class="nav__links">
-            <li>
-              <a href="#home" class="nav__single-link">
-    
-                <img src="img/logo.svg" alt="logo">
-              </a>
-            </li>
-            <li>
-              <a href="#home" class="nav__single-link">Home</a>
-            </li>
-            <li>
-              <a href="#" class="nav__single-link">Services</a>
-            </li>
-            <li>
-              <a href="#" class="nav__single-link">Skills</a>
-            </li>
-            <li>
-              <a href="#" class="nav__single-link">About</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- social icons -->
-        <div class="social-icons">
-          <a href="#" class="social-icon social-icon-facebook">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="social-icon social-icon-twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="social-icon social-icon-instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-        <!-- video switch -->
-        <div class="video__switch-container">
-    
-          <div class="video__switch">
-            <span>on</span>
-            <span>off</span>
-            <div class="video__switch-btn"></div>
-          </div>
-        </div>
-      </header>
-      <!-- end of header -->
-    
-    <!--  service  -->
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- services -->
     <section class="services section-padding" id="services">
-        <!-- section-title -->
-        <div class="section-title__container">
+      <!-- section-title -->
+      <div class="section-title__container">
+        <!-- icon -->
+        <div class="section-title__icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <!-- text -->
+        <div class="section-title__text">
+          <h1 class="section-title__name">services</h1>
+          <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
+        </div>
+      </div>
+      <!-- end of section-title -->
+      <div class="flexbox-parent flexbox-parent--medium">
+        <!-- single service -->
+        <article class="service">
           <!-- icon -->
-          <div class="section-title__icon">
-            <i class="fas fa-cogs"></i>
+          <div class="service__icon">
+            <i class="fas fa-desktop fa-fw"></i>
           </div>
           <!-- text -->
-          <div class="section-title__text">
-            <h1 class="section-title__name">services</h1>
-            <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
+          <div class="service__text">
+            <h2 class="service__name">web</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
           </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <!-- icon -->
+          <div class="service__icon">
+            <i class="fas fa-pencil-alt fa-fw"></i>
+          </div>
+          <!-- text -->
+          <div class="service__text">
+            <h2 class="service__name">prototyping</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <!-- icon -->
+          <div class="service__icon">
+            <i class="fas fa-mobile fa-fw"></i>
+          </div>
+          <!-- text -->
+          <div class="service__text">
+            <h2 class="service__name">responsive</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <!-- icon -->
+          <div class="service__icon">
+            <i class="fas fa-paint-brush fa-fw"></i>
+          </div>
+          <!-- text -->
+          <div class="service__text">
+            <h2 class="service__name">design</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <article class="service">
+          <!-- icon -->
+          <div class="service__icon">
+            <i class="fas fa-lightbulb fa-fw"></i>
+          </div>
+          <!-- text -->
+          <div class="service__text">
+            <h2 class="service__name">research</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <article class="service">
+          <!-- icon -->
+          <div class="service__icon">
+            <i class="fas fa-chart-bar fa-fw"></i>
+          </div>
+          <!-- text -->
+          <div class="service__text">
+            <h2 class="service__name">marketing</h2>
+            <h4 class="service__info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptatibus, quasi?
+            </h4>
+          </div>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!--  contact   -->
+    <section class="contact section-padding" id="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">contact us</h2>
+        <form class="contact__form">
+          <input type="email" class="contact__input" />
+          <button type="submit" class="contact__submit">submit</button>
+        </form>
+      </div>
+    </section>
+    <section class="projects section-padding" id="projects">
+      <!-- section-title -->
+      <div class="reverse-section-title__container">
+        <!-- icon -->
+        <div class="reverse-section-title__icon ">
+          <i class="fas fa-project-diagram"></i>
         </div>
-        <!-- end of section-title -->
-        <div class="flexbox-parent flexbox-parent--medium">
-          <!-- single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-desktop fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">web</h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-pencil-alt fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">prototyping</h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-mobile fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">responsive </h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-paint-brush fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">design</h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-lightbulb fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">research</h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <article class="service">
-            <!-- icon -->
-            <div class="service__icon">
-              <i class="fas fa-chart-bar fa-fw"></i>
-            </div>
-            <!-- text -->
-            <div class="service__text">
-              <h2 class="service__name">marketing</h2>
-              <h4 class="service__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quasi?</h4>
-            </div>
-          </article>
-          <!-- end of single service -->
+        <!-- text -->
+        <div class="reverse-section-title__text">
+          <h1 class="reverse-section-title__name">projects</h1>
+          <h4 class="reverse-section-title__info">
+            Lorem ipsum dolor sit amet.
+          </h4>
         </div>
-      </section>
+      </div>
+
+      <div class="flexbox-parent flexbox-parent--medium" id="projects__modal">
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="./img/current-projects-1.jpeg"
+            class="project__img"
+            alt="project"
+          />
+          <a href="./img/current-projects-1.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-2.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-2.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-3.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-3.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-4.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-4.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-5.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-5.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-6.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-6.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-7.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-7.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+
+        <!-- single project -->
+        <article class="project">
+          <img
+            src="img/current-projects-8.jpeg"
+            alt="project"
+            class="project__img"
+          />
+          <a href="img/current-projects-8.jpeg" class="project__icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="project__outline"></div>
+        </article>
+      </div>
+    </section>
+    <!-- progress section -->
+  <section class="progress section-padding" id="progress">
+      <!-- section-title -->
+      <div class="section-title__container">
+        <!-- icon -->
+        <div class="section-title__icon">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <!-- text -->
+        <div class="section-title__text">
+          <h1 class="section-title__name ">our progress</h1>
+          <h4 class="section-title__info ">Lorem ipsum dolor sit amet.</h4>
+        </div>
+      </div>
+      <!-- end of section-title -->
+      <div class="flexbox-parent flexbox-parent--medium">
+  
+        <!-- progress img -->
+        <article class="progress__img progress__item">
+  
+        </article>
+        <!-- progress info -->
+        <article class="progress__info progress__item">
+          <div class="progress__container">
+            <!-- single progress bar -->
+            <div class="progress__bar">
+              <!-- text -->
+              <div class="progress__bar-text">
+                <h1>Deliveries</h1>
+                <h1>100%</h1>
+              </div>
+              <!-- value -->
+              <div class="progress__bcg">
+                <div class="progress__value progress__value--one">
+  
+                </div>
+              </div>
+            </div>
+            <!-- end of progress bar -->
+            <!-- single progress bar -->
+            <div class="progress__bar">
+              <!-- text -->
+              <div class="progress__bar-text">
+                <h1>initial sale</h1>
+                <h1>90%</h1>
+              </div>
+              <!-- value -->
+              <div class="progress__bcg">
+                <div class="progress__value progress__value--two"></div>
+              </div>
+            </div>
+            <!-- end of progress bar -->
+            <!-- single progress bar -->
+            <div class="progress__bar">
+              <!-- text -->
+              <div class="progress__bar-text">
+                <h1>customer satisfaction</h1>
+                <h1>80%</h1>
+              </div>
+              <!-- value -->
+              <div class="progress__bcg">
+                <div class="progress__value progress__value--three"></div>
+              </div>
+            </div>
+            <!-- end of progress bar -->
+            <!-- single progress bar -->
+            <div class="progress__bar">
+              <!-- text -->
+              <div class="progress__bar-text">
+                <h1>follow up</h1>
+                <h1>70%</h1>
+              </div>
+              <!-- value -->
+              <div class="progress__bcg">
+                <div class="progress__value progress__value--four"></div>
+              </div>
+            </div>
+            <!-- end of progress bar -->
+            <!-- single progress bar -->
+            <div class="progress__bar">
+              <!-- text -->
+              <div class="progress__bar-text">
+                <h1>Response Times</h1>
+                <h1>60%</h1>
+              </div>
+              <!-- value -->
+              <div class="progress__bcg">
+                <div class="progress__value progress__value--five">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- end of progress bar -->
+          </div>
+        </article>
+      </div>
+  
+    </section>
+    <!-- about section -->
+  <section class="about section-padding">
+      <!-- section-title -->
+      <div class="reverse-section-title__container">
+        <!-- icon -->
+        <div class="reverse-section-title__icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <!-- text -->
+        <div class="reverse-section-title__text section-title__text--border--blue">
+          <h1 class="reverse-section-title__name ">about us</h1>
+          <h4 class="reverse-section-title__info section-title__info--blue">Lorem ipsum dolor sit amet.</h4>
+        </div>
+      </div>
+      <!-- end of section-title -->
+      <div class="about__center flexbox-parent flexbox-parent--medium">
+        <!-- about img -->
+        <article class="about__img item-margin">
+          <div class="about__img-container">
+            <h1 class="about__img-name">john doe</h1>
+  
+            <img src="img/team-1.jpg" alt="" class="about__img-photo">
+            <div class="about__img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam, reiciendis sequi rem debitis dolores dignissimos
+              perferendis quidem incidunt doloribus sit, ab quas nisi autem.</div>
+          </div>
+        </article>
+        <!-- about info -->
+        <article class="about__info item-margin">
+          <h1 class="about__info-title">frequent questions</h1>
+          <!-- single accordion -->
+          <div class="accordion">
+            <!-- header -->
+            <div class="accordion__header">
+              <div class="accordion__icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h4 class="accordion__title">web design &amp; development</h4>
+              <div class="accordion__btn">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+            <!-- accordion content -->
+            <div class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
+              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+            </div>
+          </div>
+          <!-- single accordion -->
+          <div class="accordion">
+            <!-- header -->
+            <div class="accordion__header">
+              <div class="accordion__icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h4 class="accordion__title">creative designer</h4>
+              <div class="accordion__btn">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+            <!-- accordion content -->
+            <div class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
+              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+            </div>
+          </div>
+          <!-- single accordion -->
+          <div class="accordion">
+            <!-- header -->
+            <div class="accordion__header">
+              <div class="accordion__icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h4 class="accordion__title">article writer</h4>
+              <div class="accordion__btn">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+            <!-- accordion content -->
+            <div class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
+              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+            </div>
+          </div>
+  
+        </article>
+      </div>
+    </section>
 
     <!-- scripts -->
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- magnific -->
-    <!-- <script src="plugins/magnific/jquery.magnific-popup.min.js"></script> -->
+    <script src="plugins/magnific/jquery.magnific-popup.min.js"></script>
     <!-- magnific script -->
     <!-- <script src="plugins/magnific/magnific.js"></script> -->
     <!-- numscroller -->
