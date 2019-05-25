@@ -555,8 +555,90 @@ body {
 }
 
 .accordion {
-    border: 2px solid var(--black);
+    border: 1px solid var(--black);
     margin: 1rem 0;
+
+    &__header {
+        display: flex;
+        background: var(--white);
+        color: var(--black);
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--black);
+
+
+    }
+
+    &__icon {
+        padding: 0.75rem;
+        background: var(--black);
+        color: var(--yellow);
+        transition: all 0.5s linear;
+    }
+
+    &__header:hover &__icon {
+        background: var(--yellow);
+        color: var(--black);
+    }
+
+    &__header:hover &__btn {
+        background: var(--yellow);
+    }
+
+
+    &__content {
+        padding: 1rem 2rem;
+        line-height: 1.5;
+        display: none;
+        background: var(--white)
+    }
+
+    &__btn {
+        margin-right: 0.5rem;
+        transition: all 1s ease;
+        border: 1px solid var(--black);
+        padding: 0.08rem 0.32rem;
+        border-radius: 0.25rem;
+        transition: all 0.5s linear;
+    }
+
+}
+
+// rotate
+.rotate {
+    transform: rotate(-180deg);
+
+}
+
+//  numbers
+.number {
+    text-align: center;
+    background: var(--black);
+    padding: 3rem 0;
+    color: #eddea4;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        // background: rgb(109, 106, 79);
+        //color: #ffc914;
+        background: var(--blue);
+        color: var(--cream);
+    }
+
+    &__icon {
+        font-size: 4rem;
+    }
+    &__data {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+      }
+&__name {
+    text-transform: uppercase;
+  }
+
+
 }
 
 
@@ -638,6 +720,25 @@ body {
         flex: 0 0 50%;
     }
 
+    .about {
+        &__img {
+            flex: 0 0 calc(40% - 0.5rem);
+        }
+
+        &__info {
+            flex: 0 0 calc(60% - 0.5rem);
+            align-self: center;
+        }
+    }
+    .numbers{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .number{
+        flex:0 0 50%
+      }
+
 }
 
 @media screen and (min-width:992px) {
@@ -648,6 +749,9 @@ body {
     .project {
         flex: 0 0 25%;
     }
+    .number{
+        flex:0 0 25%
+      }
 }
 
 @keyframes pulseScale {
