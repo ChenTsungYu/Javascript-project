@@ -6,11 +6,12 @@
     box-sizing: border-box;
 }
 
+/*
 @mixin pad {
     @media screen and (min-width:768px) {
         @content
     }
-}
+}*/
 
 :root {
     --yellow: #ffc914;
@@ -38,6 +39,10 @@
     left: 0;
 }
 
+html {
+    box-sizing: border-box;
+    //font-size: 130%;
+}
 
 body {
     font-family: 'PT Sans', sans-serif;
@@ -48,8 +53,6 @@ body {
 .preloader {
     position: fixed;
     @include init_position();
-    /*  top: 0;
-    left: 0;*/
     right: 0;
     bottom: 0;
     background: var(--white);
@@ -212,11 +215,142 @@ body {
     }
 }
 
+/////////////////// global
+
+.section-padding {
+    padding: 3rem 0;
+}
+
+// flexbox parent 
+.flexbox-parent {
+    max-width: 95vw;
+    margin: 2rem auto;
+}
+
+.section-title__ {
+    &container {
+        display: flex;
+        padding: 2rem 1.5rem;
+    }
+
+    &icon {
+        font-size: 4rem;
+        color: var(--yellow);
+        margin-right: 1rem;
+    }
+
+    &text {
+        line-height: 1.5;
+        border-left: 0.3rem solid var(--grey);
+        padding-left: 1rem;
+    }
+
+    &name {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    &info {
+        color: var(--grey);
+    }
+}
+
+/*
+.section-title__container {
+    display: flex;
+    padding: 2rem 1.5rem;
+}
+
+.section-title__icon {
+    font-size: 4rem;
+    color: var(--yellow);
+    margin-right: 1rem;
+}
+
+.section-title__text {
+    line-height: 1.5;
+    border-left: 0.3rem solid var(--grey);
+    padding-left: 1rem;
+}
+
+.section-title__name {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.section-title__info {
+    color: var(--grey);
+}
+*/
+.service {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+
+    &__icon {
+        font-size: 4rem;
+        align-self: center;
+        padding: 0.5rem;
+        color: var(--yellow);
+        transition: all 0.5s linear;
+    }
+
+    &:hover &__icon {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    &__name {
+        text-transform: capitalize;
+    }
+
+    &__text {
+        padding: 0.5rem;
+    }
+
+    &__info {
+        color: var(--grey);
+        width: 70%;
+    }
+
+}
+
+/*
+.service__icon {
+    font-size: 4rem;
+    align-self: center;
+    padding: 0.5rem;
+    color: var(--yellow);
+    transition: all 0.5s linear;
+}
+
+.service:hover .service__icon {
+    background: var(--blue);
+    color: var(--white);
+
+}
+
+.sevice__text {
+    padding: 0.5rem;
+}
+
+.service__name {
+    text-transform: capitalize;
+}
+
+.service__info {
+    color: var(--grey);
+    width: 80%;
+}
+*/
+
+//////////////// media query
 
 @media screen and (max-width: 768px) {
     .header {
         background: url('../video/Working-it/Snapshots/Working-it.jpg')center/cover fixed no-repeat;
-
     }
 }
 
@@ -239,9 +373,11 @@ body {
         padding: 0.25rem;
         cursor: pointer;
         border-radius: 0.5rem;
-        span{
+
+        span {
             font-size: 20px;
         }
+
         &-btn {
             position: absolute;
             top: 0;
@@ -253,8 +389,24 @@ body {
             transition: all 0.3s ease;
         }
     }
-    .btnSlide{
+
+    .btnSlide {
         left: 50%;
+    }
+
+    .flexbox-parent--medium {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .service{
+        flex:0 0 calc(50% - 0.5rem);
+       }
+
+}
+@media screen and (min-width:768px){
+    .service{
+        flex:0 0 calc(100% / 3);
        }
 }
 
