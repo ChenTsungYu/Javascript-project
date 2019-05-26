@@ -678,6 +678,52 @@ body {
             border-radius: 0.5rem;
         }
 
+        &__body {
+            padding: 1rem;
+        }
+
+        &__member {
+            &-name {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+
+            &-job {
+                text-transform: capitalize;
+                margin: 0.5rem 0;
+                color: var(--blue);
+                font-size: 1.3rem;
+            }
+
+            &-text {
+                line-height: 1.5;
+                margin-top: 2rem;
+            }
+
+            &-single-favorite {
+                display: flex;
+                margin: 0.5rem 0;
+
+                &-icon {
+                    font-size: 0.5rem;
+                    background: var(--black);
+                    color: var(--yellow);
+                    padding: 0.25rem;
+                }
+
+                &-text {
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                    text-transform: uppercase;
+                    align-self: center;
+                }
+            }
+
+
+
+        }
+
+
     }
 
 
@@ -686,6 +732,84 @@ body {
 .active {
     border-color: var(--blue);
 }
+
+.prices {
+    background: var(--black)
+}
+
+.pricing-card {
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 0;
+    margin: 2rem 0;
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        margin: 1.2rem 0;
+        font-size: 2rem;
+    }
+
+    &__title {
+        color: var(--blue);
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    &__value {
+        margin: 2rem auto;
+        font-size: 4rem;
+    }
+
+    &__icon {
+        margin-right: 0.75rem;
+    }
+
+    &__text {
+        text-transform: capitalize;
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 0.5rem 2rem;
+        border: 2px solid var(--white);
+        color: var(--white);
+        border-radius: 1.5rem;
+        transition: all 1s ease;
+
+        &:hover {
+            color: var(--black);
+            background: var(--blue);
+            border-color: var(--blue);
+        }
+    }
+
+    &--custom {
+        background: var(--white);
+        color: var(--black);
+        border-radius: 2.5rem;
+        transition: all 1s linear;
+
+        &:hover {
+            transform: translateY(-20px);
+        }
+        &__link {
+            color: var(--yellow);
+            border-color: var(--yellow);
+          }
+
+    }
+
+
+}
+
 
 
 //////////////// media query
@@ -703,6 +827,9 @@ body {
             align-self: center;
         }
     }
+    
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -787,6 +914,36 @@ body {
         flex: 0 0 50%
     }
 
+    .team-info {
+        margin: 4rem auto 2rem auto;
+
+        &__img {
+            position: absolute;
+            width: 45%;
+            height: 70%;
+            top: -10%;
+            right: -10%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            border-bottom-left-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+
+
+
+        }
+
+        &__member-text {
+            width: 60%;
+        }
+    }
+
+    .team-img__item {
+        height: 100px;
+        width: 100px;
+    }
+    .pricing-card {
+        flex: 0 0 calc(50% - 0.8rem);
+      }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -801,6 +958,15 @@ body {
     .number {
         flex: 0 0 25%
     }
+
+    .team-info__img {
+        width: 40%;
+        height: 80%;
+    }
+    .pricing-card {
+        flex: 0 0 calc(33.3% - 0.8rem);
+      }
+
 }
 
 @keyframes pulseScale {

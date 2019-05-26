@@ -596,9 +596,100 @@ body {
     display: block;
     width: 100%;
     border-radius: 0.5rem; }
+  .team-info__body {
+    padding: 1rem; }
+  .team-info__member-name {
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .team-info__member-job {
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    color: var(--blue);
+    font-size: 1.3rem; }
+  .team-info__member-text {
+    line-height: 1.5;
+    margin-top: 2rem; }
+  .team-info__member-single-favorite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.5rem 0; }
+    .team-info__member-single-favorite-icon {
+      font-size: 0.5rem;
+      background: var(--black);
+      color: var(--yellow);
+      padding: 0.25rem; }
+    .team-info__member-single-favorite-text {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      text-transform: uppercase;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 .active {
   border-color: var(--blue); }
+
+.prices {
+  background: var(--black); }
+
+.pricing-card {
+  text-align: center;
+  color: var(--white);
+  padding: 2rem 0;
+  margin: 2rem 0; }
+  .pricing-card__list {
+    list-style-type: none; }
+  .pricing-card__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 1.2rem 0;
+    font-size: 2rem; }
+  .pricing-card__title {
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+  .pricing-card__value {
+    margin: 2rem auto;
+    font-size: 4rem; }
+  .pricing-card__icon {
+    margin-right: 0.75rem; }
+  .pricing-card__text {
+    text-transform: capitalize; }
+  .pricing-card__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 1.5rem;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+    .pricing-card__link:hover {
+      color: var(--black);
+      background: var(--blue);
+      border-color: var(--blue); }
+  .pricing-card--custom {
+    background: var(--white);
+    color: var(--black);
+    border-radius: 2.5rem;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear; }
+    .pricing-card--custom:hover {
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px); }
+    .pricing-card--custom__link {
+      color: var(--yellow);
+      border-color: var(--yellow); }
 
 @media screen and (min-width: 576px) {
   .progress__img {
@@ -693,7 +784,28 @@ body {
   .number {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
-    flex: 0 0 50%; } }
+    flex: 0 0 50%; }
+  .team-info {
+    margin: 4rem auto 2rem auto; }
+    .team-info__img {
+      position: absolute;
+      width: 45%;
+      height: 70%;
+      top: -10%;
+      right: -10%;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      border-bottom-left-radius: 0rem;
+      border-bottom-right-radius: 0rem; }
+    .team-info__member-text {
+      width: 60%; }
+  .team-img__item {
+    height: 100px;
+    width: 100px; }
+  .pricing-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 0.8rem);
+    flex: 0 0 calc(50% - 0.8rem); } }
 
 @media screen and (min-width: 992px) {
   .service {
@@ -707,7 +819,14 @@ body {
   .number {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%; } }
+    flex: 0 0 25%; }
+  .team-info__img {
+    width: 40%;
+    height: 80%; }
+  .pricing-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(33.3% - 0.8rem);
+    flex: 0 0 calc(33.3% - 0.8rem); } }
 
 @-webkit-keyframes pulseScale {
   0% {

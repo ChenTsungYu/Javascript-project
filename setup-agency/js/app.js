@@ -11,18 +11,18 @@ $(document).ready(function () {
     // video switch  
     $('.video__switch-container').on('click', () => {
         // 檢查第一個  video__switch-btn 元素是否包含 btnSlide的class
-        //  const value = $('.video__switch-btn').hasClass('btnSlide');
         isPlay = !isPlay;
         if (isPlay) {
             $('.video__switch-btn').removeClass('btnSlide');
             // 獲得第一個元素的名稱和值，play() 方法開始播放當前的影片
             $('#video').get(0).play();
         } else {
-            $('.video__switch-btn').add('btnSlide');
-            // 獲得第一個元素的名稱和值，play() 方法開始播放當前的影片
+            $('.video__switch-btn').addClass('btnSlide');       
+            // 獲得第一個元素的名稱和值，pause() 方法開始停止當前的影片
             $('#video').get(0).pause();
         }
     });
+
     // 從magnific.js 找code貼上
     // magnific popup 音箱效果
     $('#projects__modal').magnificPopup({
@@ -57,4 +57,72 @@ $(document).ready(function () {
      $(this).toggleClass('rotate');
      $(this).parent().next().slideToggle();
   });
+ //  IIFE
+ (function () {
+    let data = [
+        {
+         id: 0,
+         name: 'john doe',
+         job: 'developer',
+         text: `A biography, or simply bio, is a detailed description of a person's life.It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality.`,
+         favorites: ['eat', 'drink', 'sleep'],
+         img: 'img/team-1.jpg'
+        },
+        {
+         id: 1,
+         name: 'tom orange',
+         job: 'designer',
+         text: `A biography, or simply bio, is a detailed description of a person's life.It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality.`,
+         favorites: ['paint', 'draw', 'run'],
+         img: 'img/team-2.jpg'
+        },
+        {
+         id: 2,
+         name: 'albert cupid',
+         job: 'accountant',
+         text: `A biography, or simply bio, is a detailed description of a person's life.It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality.`,
+         favorites: ['math', 'physics', 'more math'],
+         img: 'img/team-3.jpg'
+        },
+        {
+         id: 4,
+         name: 'dog hugo',
+         job: 'intern',
+         text: `A biography, or simply bio, is a detailed description of a person's life.It involves more than just the basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of his or her life, including intimate details of experience, and may include an analysis of the subject's personality.`,
+         favorites: ['bark', 'run', 'bite'],
+         img: 'img/team-4.jpg'
+        },
+     
+       ]
+
+       // click event
+ $('.team-img__item').on('click', function () {
+    $('.team-img__item').not(this).removeClass('active');
+    $(this).addClass('active');
+    //console.log(this);
+    let id = $(this).attr('data-id'); // note
+    //console.log(id);
+    $('.team-info__member-name').text(data[id].name);
+    // change the job
+    $('.team-info__member-job').text(data[id].job);
+    // change the text
+    $('.team-info__member-text').text(data[id].text);
+     // change favorites
+    $('.team-info__member-single-favorite-text').each( function (index) { 
+         $(this).text(data[id].favorites[index]);
+    });
+
+ // 替換至被點擊的圖片  change photo
+    let NewImg =  $('.team-info__img').attr('src', data[id].img);
+console.log(NewImg);
+
+ });
+
+
+ 
+
+
+
+ })();
+
 });
