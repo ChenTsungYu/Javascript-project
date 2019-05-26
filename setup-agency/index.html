@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Agency</title>
     <!-- main css -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- font awesome(SVG with js)   -->
-    <script src="js/all.js"></script>
+    <script src="./js/all.js"></script>
     <!-- magnific -->
     <link rel="stylesheet" href="plugins/magnific/magnific-popup.css" />
     <!-- owl carousel css-->
-    <!-- <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css"> -->
+     <link rel="stylesheet" href="./plugins/owl/owl.carousel.min.css"> 
     <!--owl carousel theme  -->
-    <!-- <link rel="stylesheet" href="plugins/owl/owl.theme.default.css"> -->
+     <link rel="stylesheet" href="./plugins/owl/owl.theme.default.css">
   </head>
 
   <body>
@@ -30,18 +30,6 @@
           <span class="banner__title-name">agency</span>
         </h1>
       </article>
-      <!-- video -->
-      <div class="video__container">
-        <video class="video__item" id="video" autoplay loop>
-          <source src="video/Working-it/Mp4/Working-it.mp4" type="video/mp4" />
-          <source src="video/Working-it/Ogv/Working-it.ogv" type="video/ogg" />
-          <source
-            src="video/Working-it/Webm/Working-it.webm"
-            type="video/webm"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <!-- video overlay -->
       <div class="video__overlay"></div>
       <!-- nav btn -->
@@ -57,17 +45,38 @@
             </a>
           </li>
           <li>
-            <a href="#home" class="nav__links-item">Home</a>
+            <a href="#home" class="nav__links-item">home</a>
           </li>
           <li>
-            <a href="#" class="nav__links-item">Services</a>
+            <a href="#services" class="nav__links-item">services</a>
           </li>
           <li>
-            <a href="#" class="nav__links-item">Skills</a>
+            <a href="#contact" class="nav__links-item">contact us</a>
           </li>
           <li>
-            <a href="#" class="nav__links-item">About</a>
+              <a href="#projects" class="nav__links-item">projects</a>
+            </li>
+            <li>
+                <a href="#progress" class="nav__links-item">our progress</a>
+              </li>
+          <li>
+            <a href="#about" class="nav__links-item">about</a>
           </li>
+          <li>
+              <a href="#team" class="nav__links-item">team</a>
+            </li>
+            <li>
+                <a href="#prices" class="nav__links-item">prices</a>
+              </li>
+              <li>
+                  <a href="#blogs" class="nav__links-item">blogs</a>
+                </li>
+              <li>
+                  <a href="#comments" class="nav__links-item">comments</a>
+                </li>
+                <li>
+                    <a href="#map" class="nav__links-item">map</a>
+                  </li>
         </ul>
       </nav>
       <!-- social icons -->
@@ -82,14 +91,7 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-      <!-- video switch -->
-      <div class="video__switch-container">
-        <div class="video__switch">
-          <span>on</span>
-          <span>off</span>
-          <div class="video__switch-btn"></div>
-        </div>
-      </div>
+      
     </header>
     <!-- end of header -->
     <!-- services -->
@@ -106,7 +108,7 @@
           <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
         </div>
       </div>
-      
+
       <div class="flexbox-parent flexbox-parent--medium">
         <!-- single service -->
         <article class="service">
@@ -209,7 +211,7 @@
       <div class="contact__container">
         <h2 class="contact__title">contact us</h2>
         <form class="contact__form">
-          <input type="email" class="contact__input" />
+          <input type="email" class="contact__input" placeholder="Input  your Email here "/>
           <button type="submit" class="contact__submit">submit</button>
         </form>
       </div>
@@ -336,7 +338,7 @@
       </div>
     </section>
     <!-- progress section -->
-  <section class="progress section-padding" id="progress">
+    <section class="progress section-padding" id="progress">
       <!-- section-title -->
       <div class="section-title__container">
         <!-- icon -->
@@ -349,13 +351,10 @@
           <h4 class="section-title__info ">Lorem ipsum dolor sit amet.</h4>
         </div>
       </div>
-      
+
       <div class="flexbox-parent flexbox-parent--medium">
-  
         <!-- progress img -->
-        <article class="progress__img progress__item">
-  
-        </article>
+        <article class="progress__img progress__item"></article>
         <!-- progress info -->
         <article class="progress__info progress__item">
           <div class="progress__container">
@@ -368,9 +367,7 @@
               </div>
               <!-- value -->
               <div class="progress__bcg">
-                <div class="progress__value progress__value--one">
-  
-                </div>
+                <div class="progress__value progress__value--one"></div>
               </div>
             </div>
             <!-- end of progress bar -->
@@ -422,19 +419,16 @@
               </div>
               <!-- value -->
               <div class="progress__bcg">
-                <div class="progress__value progress__value--five">
-                  
-                </div>
+                <div class="progress__value progress__value--five"></div>
               </div>
             </div>
             <!-- end of progress bar -->
           </div>
         </article>
       </div>
-  
     </section>
     <!-- about section -->
-  <section class="about section-padding">
+    <section class="about section-padding" id="about">
       <!-- section-title -->
       <div class="reverse-section-title__container">
         <!-- icon -->
@@ -442,21 +436,28 @@
           <i class="fas fa-user"></i>
         </div>
         <!-- text -->
-        <div class="reverse-section-title__text section-title__text--border--blue">
+        <div
+          class="reverse-section-title__text section-title__text--border--blue"
+        >
           <h1 class="reverse-section-title__name ">about us</h1>
-          <h4 class="reverse-section-title__info section-title__info--blue">Lorem ipsum dolor sit amet.</h4>
+          <h4 class="reverse-section-title__info section-title__info--blue">
+            Lorem ipsum dolor sit amet.
+          </h4>
         </div>
       </div>
-      
+
       <div class="about__center flexbox-parent flexbox-parent--medium">
         <!-- about img -->
         <article class="about__img item-margin">
           <div class="about__img-container">
             <h1 class="about__img-name">john doe</h1>
-  
-            <img src="img/team-1.jpg" alt="" class="about__img-photo">
-            <div class="about__img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam, reiciendis sequi rem debitis dolores dignissimos
-              perferendis quidem incidunt doloribus sit, ab quas nisi autem.</div>
+
+            <img src="img/team-1.jpg" alt="" class="about__img-photo" />
+            <div class="about__img-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              ullam, reiciendis sequi rem debitis dolores dignissimos
+              perferendis quidem incidunt doloribus sit, ab quas nisi autem.
+            </div>
           </div>
         </article>
         <!-- about info -->
@@ -476,8 +477,10 @@
             </div>
             <!-- accordion content -->
             <div class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
-              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae quo ipsum reiciendis temporibus saepe, quos, culpa quia
+              minus facere odio dolor minima assumenda at pariatur repudiandae
+              similique facilis placeat.
             </div>
           </div>
           <!-- single accordion -->
@@ -494,8 +497,10 @@
             </div>
             <!-- accordion content -->
             <div class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
-              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae quo ipsum reiciendis temporibus saepe, quos, culpa quia
+              minus facere odio dolor minima assumenda at pariatur repudiandae
+              similique facilis placeat.
             </div>
           </div>
           <!-- single accordion -->
@@ -512,23 +517,32 @@
             </div>
             <!-- accordion content -->
             <div class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae quo ipsum reiciendis temporibus saepe, quos, culpa
-              quia minus facere odio dolor minima assumenda at pariatur repudiandae similique facilis placeat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae quo ipsum reiciendis temporibus saepe, quos, culpa quia
+              minus facere odio dolor minima assumenda at pariatur repudiandae
+              similique facilis placeat.
             </div>
           </div>
-  
         </article>
       </div>
     </section>
 
-     <!--numbers section-->
-  <section id="numbers" class="numbers">
+    <!--numbers section-->
+    <section id="numbers" class="numbers">
       <!-- single nubmer -->
       <article class="number">
         <span class="number__icon">
           <i class="fa fa-user"></i>
         </span>
-        <p class='numscroller number__data' data-min='1' data-max='1000' data-delay='1000' data-increment='1'>1000</p>
+        <p
+          class="numscroller number__data"
+          data-min="1"
+          data-max="1000"
+          data-delay="1000"
+          data-increment="1"
+        >
+          1000
+        </p>
         <h3 class="number__name">users</h3>
       </article>
       <!-- single number -->
@@ -537,7 +551,15 @@
         <span class="number__icon">
           <i class="fa fa-cart-plus"></i>
         </span>
-        <p class='numscroller number__data' data-min='1' data-max='1000' data-delay='1000' data-increment='1'>1000</p>
+        <p
+          class="numscroller number__data"
+          data-min="1"
+          data-max="1000"
+          data-delay="1000"
+          data-increment="1"
+        >
+          1000
+        </p>
         <h3 class="number__name">downloads</h3>
       </article>
       <!-- single number -->
@@ -546,7 +568,15 @@
         <span class="number__icon">
           <i class="fa fa-fire-extinguisher"></i>
         </span>
-        <p class='numscroller number__data' data-min='1' data-max='1000' data-delay='1000' data-increment='1'>1000</p>
+        <p
+          class="numscroller number__data"
+          data-min="1"
+          data-max="1000"
+          data-delay="1000"
+          data-increment="1"
+        >
+          1000
+        </p>
         <h3 class="number__name">emergencies</h3>
       </article>
       <!-- single number -->
@@ -555,7 +585,15 @@
         <span class="number__icon">
           <i class="fas fa-envelope"></i>
         </span>
-        <p class='numscroller number__data' data-min='1' data-max='1000' data-delay='1000' data-increment='1'>1000</p>
+        <p
+          class="numscroller number__data"
+          data-min="1"
+          data-max="1000"
+          data-delay="1000"
+          data-increment="1"
+        >
+          1000
+        </p>
         <h3 class="number__name">messages</h3>
       </article>
       <!-- single number -->
@@ -563,212 +601,396 @@
 
     <!-- team section -->
     <section class="team section-padding" id="team">
-        <!-- section-title -->
-        <div class="section-title__container">
-          <!-- icon -->
-          <div class="section-title__icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <!-- text -->
-          <div class="section-title__text">
-            <h1 class="section-title__name">team</h1>
-            <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
-          </div>
+      <!-- section-title -->
+      <div class="section-title__container">
+        <!-- icon -->
+        <div class="section-title__icon">
+          <i class="fas fa-users"></i>
         </div>
-        <!-- end of section-title -->
-        <!-- team img -->
-        <article class="team-img item-margin">
-          <img src="img/team-1.jpg" alt="" class="team-img__item active" data-id='0'>
-          <img src="img/team-2.jpg" alt="" class="team-img__item" data-id="1">
-          <img src="img/team-3.jpg" alt="" class="team-img__item" data-id="2">
-          <img src="img/team-4.jpg" alt="" class="team-img__item" data-id="3">
-        </article>
-        <!-- team-info  -->
-        <article class="team-info item-margin">
-          <img src="img/team-1.jpg" alt="" class="team-info__img">
-          <div class="team-info__body">
-    
-            <h1 class="team-info__member-name">john doe</h1>
-            <h4 class="team-info__member-job">developer</h4>
-            <p class="team-info__member-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad adipisci cupiditate beatae sunt quae distinctio
-              magnam ipsa harum inventore labore dolore voluptate omnis dignissimos eligendi earum eius, quam ut et doloribus
-              similique! Beatae cupiditate iste esse, autem necessitatibus perferendis quia sed itaque provident velit, recusandae
-              harum labore saepe porro?</p>
-              <article class="team-info__member-favorites">
-                <!-- single favorite -->
-                <div class="team-info__member-single-favorite">
-                  <!-- icon -->
-                  <div class="team-info__member-single-favorite-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <!-- text -->
-                  <div class="team-info__member-single-favorite-text">eat</div>
-                </div>
-                <!-- end of single favorite -->
-                <!-- single favorite -->
-                <div class="team-info__member-single-favorite">
-                  <!-- icon -->
-                  <div class="team-info__member-single-favorite-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <!-- text -->
-                  <div class="team-info__member-single-favorite-text">drink</div>
-                </div>
-                <!-- end of single favorite -->
-                <!-- single favorite -->
-                <div class="team-info__member-single-favorite">
-                  <div class="team-info__member-single-favorite-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="team-info__member-single-favorite-text">sleep</div>
-                </div>
-                <!-- end of single favorite -->
-    
-    
-              </article>
-          </div>
-    
-    
-        </article>
-      </section>
+        <!-- text -->
+        <div class="section-title__text">
+          <h1 class="section-title__name">team</h1>
+          <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
+        </div>
+      </div>
+      <!-- end of section-title -->
+      <!-- team img -->
+      <article class="team-img item-margin">
+        <img
+          src="img/team-1.jpg"
+          alt=""
+          class="team-img__item active"
+          data-id="0"
+        />
+        <img src="img/team-2.jpg" alt="" class="team-img__item" data-id="1" />
+        <img src="img/team-3.jpg" alt="" class="team-img__item" data-id="2" />
+        <img src="img/team-4.jpg" alt="" class="team-img__item" data-id="3" />
+      </article>
+      <!-- team-info  -->
+      <article class="team-info item-margin">
+        <img src="img/team-1.jpg" alt="" class="team-info__img" />
+        <div class="team-info__body">
+          <h1 class="team-info__member-name">john doe</h1>
+          <h4 class="team-info__member-job">developer</h4>
+          <p class="team-info__member-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad
+            adipisci cupiditate beatae sunt quae distinctio magnam ipsa harum
+            inventore labore dolore voluptate omnis dignissimos eligendi earum
+            eius, quam ut et doloribus similique! Beatae cupiditate iste esse,
+            autem necessitatibus perferendis quia sed itaque provident velit,
+            recusandae harum labore saepe porro?
+          </p>
+          <article class="team-info__member-favorites">
+            <!-- single favorite -->
+            <div class="team-info__member-single-favorite">
+              <!-- icon -->
+              <div class="team-info__member-single-favorite-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <!-- text -->
+              <div class="team-info__member-single-favorite-text">eat</div>
+            </div>
+            <!-- end of single favorite -->
+            <!-- single favorite -->
+            <div class="team-info__member-single-favorite">
+              <!-- icon -->
+              <div class="team-info__member-single-favorite-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <!-- text -->
+              <div class="team-info__member-single-favorite-text">drink</div>
+            </div>
+            <!-- end of single favorite -->
+            <!-- single favorite -->
+            <div class="team-info__member-single-favorite">
+              <div class="team-info__member-single-favorite-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="team-info__member-single-favorite-text">sleep</div>
+            </div>
+            <!-- end of single favorite -->
+          </article>
+        </div>
+      </article>
+    </section>
 
-<!--prices section -->
-<section class="prices section-padding" id="prices">
- <!-- section-title -->
- <div class="reverse-section-title__container">
-    <!-- icon -->
-    <div class="reverse-section-title__icon ">
-      <i class="far fa-money-bill-alt"></i>
-    </div>
-    <!-- text -->
-    <div class="reverse-section-title__text">
-      <h1 class="reverse-section-title__name section-title__name--yellow">prices</h1>
-      <h4 class="reverse-section-title__info">Lorem ipsum dolor sit amet.</h4>
-    </div>
-  </div>
-  <div class="flexbox-parent flexbox-parent--medium">
-      <!--  pricing card -->
-      <article class="pricing-card ">
+    <!--prices section -->
+    <section class="prices section-padding" id="prices">
+      <!-- section-title -->
+      <div class="reverse-section-title__container">
+        <!-- icon -->
+        <div class="reverse-section-title__icon ">
+          <i class="far fa-money-bill-alt"></i>
+        </div>
+        <!-- text -->
+        <div class="reverse-section-title__text">
+          <h1 class="reverse-section-title__name section-title__name--yellow">
+            prices
+          </h1>
+          <h4 class="reverse-section-title__info">
+            Lorem ipsum dolor sit amet.
+          </h4>
+        </div>
+      </div>
+      <div class="flexbox-parent flexbox-parent--medium">
+        <!--  pricing card -->
+        <article class="pricing-card ">
           <h3 class="pricing-card__title">startup</h3>
           <h1 class="pricing-card__value">$10</h1>
           <ul class="pricing-card__list">
-              <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">sharing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">desing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">private messages</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">personal brand</p>
-                </li>
-
-            </ul>
-            <a href="#" class="pricing-card__link">upgrade plan</a>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">sharing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">desing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">private messages</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">personal brand</p>
+            </li>
+          </ul>
+          <a href="#" class="pricing-card__link">upgrade plan</a>
         </article>
         <!--  pricing card(custom)    -->
-      <article class="pricing-card pricing-card--custom">
+        <article class="pricing-card pricing-card--custom">
           <h3 class="pricing-card__title">pro</h3>
           <h1 class="pricing-card__value">$50</h1>
           <ul class="pricing-card__list">
-              <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">sharing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">desing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">private messages</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">personal brand</p>
-                </li>
-
-            </ul>
-            <a href="#" class="pricing-card__link pricing-card--custom__link">upgrade plan</a>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">sharing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">desing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">private messages</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">personal brand</p>
+            </li>
+          </ul>
+          <a href="#" class="pricing-card__link pricing-card--custom__link"
+            >upgrade plan</a
+          >
         </article>
         <!--  pricing card-->
-      <article class="pricing-card">
+        <article class="pricing-card">
           <h3 class="pricing-card__title">standard</h3>
           <h1 class="pricing-card__value">$20</h1>
           <ul class="pricing-card__list">
-              <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">sharing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-check"></i>
-                  </span>
-                  <p class="pricing-card__text">desing tools</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">private messages</p>
-                </li>
-                <li class="pricing-card__item">
-                  <span class="pricing-card__icon">
-                    <i class="fa fa-times"></i>
-                  </span>
-                  <p class="pricing-card__text">personal brand</p>
-                </li>
-
-            </ul>
-            <a href="#" class="pricing-card__link">upgrade plan</a>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">sharing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-check"></i>
+              </span>
+              <p class="pricing-card__text">desing tools</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">private messages</p>
+            </li>
+            <li class="pricing-card__item">
+              <span class="pricing-card__icon">
+                <i class="fa fa-times"></i>
+              </span>
+              <p class="pricing-card__text">personal brand</p>
+            </li>
+          </ul>
+          <a href="#" class="pricing-card__link">upgrade plan</a>
         </article>
-</div>
+      </div>
+    </section>
 
+    <!-- blog -->
+    <section class="blogs section-padding" id="blogs">
+      <div class="flexbox-parent">
+        <!--  single blog     -->
+        <article class="blog item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+          <div class="blog__photo">
+            <img
+              src="./img/current-projects-1.jpeg"
+              alt=""
+              class="blog__photo-img"
+            />
+          </div>
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title">Blog1</h1>
+            <div class="blog__info-underline"></div>
+            <p class="blog__info-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+              distinctio error quidem quia vel eius quibusdam in culpa minima
+              mollitia.
+            </p>
+            <a href="#" class="blog__info-link">Read More</a>
+          </div>
+        </article>
+        <!--  single blog     -->
+        <article class="blog blog--reverse item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+          <div class="blog__photo">
+            <img
+              src="img/current-projects-2.jpeg"
+              alt=""
+              class="blog__photo-img"
+            />
+          </div>
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title">Blog2</h1>
+            <div class="blog__info-underline"></div>
+            <p class="blog__info-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+              distinctio error quidem quia vel eius quibusdam in culpa minima
+              mollitia.
+            </p>
+            <a href="#" class="blog__info-link">Read More</a>
+          </div>
+        </article>
+
+        <!--  single blog -->
+        <article class="blog  item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+          <div class="blog__photo">
+            <img
+              src="img/current-projects-3.jpeg"
+              alt=""
+              class="blog__photo-img"
+            />
+          </div>
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title">Blog3</h1>
+            <div class="blog__info-underline"></div>
+            <p class="blog__info-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+              distinctio error quidem quia vel eius quibusdam in culpa minima
+              mollitia.
+            </p>
+            <a href="#" class="blog__info-link">Read More</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+<!-- quotes section -->
+<section class="quotes section-padding" id="comments">
+<!-- section-title -->
+<div class="section-title__container">
+    <!-- icon -->
+    <div class="section-title__icon">
+      <i class="fas fa-comments"></i>
+    </div>
+    <!-- text -->
+    <div class="section-title__text">
+      <h1 class="section-title__name section-title__name--yellow">what they say</h1>
+      <h4 class="section-title__info">Lorem ipsum dolor sit amet.</h4>
+    </div>
+  </div>
+  <div class="flexbox-parent flexbox-parent--medium owl-carousel owl-theme">
+<!-- single quote -->
+<article class="quote">
+    <div class="quote__icon">
+      <i class="fas fa-quote-left"></i>
+    </div>
+    <blockquote class="quote__text">
+      <p class="quote__value">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nobis laborum hic culpa libero, et adipisci asperiores minima,
+        dicta, mollitia amet excepturi non iusto cum eligendi earum! Aliquid reprehenderit dolor at obcaecati esse accusantium
+        laborum optio alias, deserunt, impedit, molestiae delectus tempore libero aut necessitatibus minima sed consectetur
+        eum incidunt!</p>
+
+      <footer>
+        <p class="quote__name">-customer john doe</p>
+        <p class="quote__job">designer</p>
+      </footer>
+    </blockquote>
+    <article class="quote__img quote__img-1"></article>
+  </article>
+  <!-- single quote -->
+  <article class="quote quote--reverse">
+    <div class="quote__icon">
+      <i class="fas fa-quote-left"></i>
+    </div>
+    <blockquote class="quote__text">
+      <p class="quote__value">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nobis laborum hic culpa libero, et adipisci asperiores minima,
+        dicta, mollitia amet excepturi non iusto cum eligendi earum! Aliquid reprehenderit dolor at obcaecati esse accusantium
+        laborum optio alias, deserunt, impedit, molestiae delectus tempore libero aut necessitatibus minima sed consectetur
+        eum incidunt!</p>
+
+      <footer>
+        <p class="quote__name">-customer tom chen</p>
+        <p class="quote__job">project manager</p>
+      </footer>
+    </blockquote>
+    <article class="quote__img quote__img-2"></article>
+  </article>
+  <!-- single quote -->
+  <article class="quote">
+    <div class="quote__icon">
+      <i class="fas fa-quote-left"></i>
+    </div>
+    <blockquote class="quote__text">
+      <p class="quote__value">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nobis laborum hic culpa libero, et adipisci asperiores minima,
+        dicta, mollitia amet excepturi non iusto cum eligendi earum! Aliquid reprehenderit dolor at obcaecati esse accusantium
+        laborum optio alias, deserunt, impedit, molestiae delectus tempore libero aut necessitatibus minima sed consectetur
+        eum incidunt!</p>
+
+      <footer>
+        <p class="quote__name">-customer Ken Leo</p>
+        <p class="quote__job">writer</p>
+      </footer>
+    </blockquote>
+    <article class="quote__img quote__img-3"></article>
+  </article>
+    </div>
   </section>
 
-
-
-
+  <!-- google maps -->
+  <section class="map" id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380513.71601505455!2d-88.01214980137253!3d41.833392500068534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+IL!5e0!3m2!1sen!2sus!4v1533068332903"
+        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map__info flexbox-parent flexbox-parent--medium">
+        <!-- single item -->
+        <div class="map-item item-margin">
+          <div class="map-item__icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h2 class="map-item__title">meet us</h2>
+          <p class="map-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, saepe!</p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="map-item item-margin">
+          <div class="map-item__icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h2 class="map-item__title">call us</h2>
+          <p class="map-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, saepe!</p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="map-item item-margin">
+          <div class="map-item__icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h2 class="map-item__title">mail us</h2>
+          <p class="map-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, saepe!</p>
+        </div>
+        <!-- end of single item -->
+      </div>
+    </section>
 
     <!-- scripts -->
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- magnific -->
     <script src="plugins/magnific/jquery.magnific-popup.min.js"></script>
-   
-    <!-- numscroller -->
-     <script src="plugins/numscroller-1.0.js"></script> 
-    <!-- owl carousel -->
-    <!-- <script src="plugins/owl/owl.carousel.min.js"></script> -->
-    <!-- owl js -->
-    <!-- <script src="plugins/owl/owl.js"></script> -->
-    <!-- app js  -->
 
+    <!-- numscroller -->
+    <script src="plugins/numscroller-1.0.js"></script>
+    <!-- owl carousel -->
+    <script src="plugins/owl/owl.carousel.min.js"></script> 
+    <!-- owl js -->
+    <script src="plugins/owl/owl.js"></script>
+    <!-- app js  -->
     <script src="js/app.js"></script>
-    <!--  -->
   </body>
 </html>
