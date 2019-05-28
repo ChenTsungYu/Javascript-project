@@ -17,3 +17,6 @@
 說明:<br/>
 使用fliter() **過濾** 搜尋列所輸入的關鍵字，只顯示關鍵字的內容。
 
+[Agency](https://chentsungyu.github.io/Javascript-project/setup-agency/index.html)<br/>
+說明: <br/>
+不用Bootstrap做一個官方機構的網站，使用jQuery及其他第三方套件(如:Magnific Popup 、NumScroller 、Owl Carousel)。
