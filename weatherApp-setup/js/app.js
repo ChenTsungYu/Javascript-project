@@ -32,7 +32,7 @@
 function getWeather(city) { 
    // 觀察API call
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
     // units=metric參數 作為轉換單位之用
     fetch(url)
     .then(data => data.json()) // JSON解析
