@@ -5,20 +5,18 @@
     const feedback = document.querySelector('.feedback');
     const apiKey = "2435fc688f0adb7743c5e50435243297";
     
-    
     form.addEventListener("submit", event => {
         event.preventDefault();
         const city = cityInput.value;
-    
+
         if (city.length === 0) {
             showFeedback('Plz enter the name of city');
-        }else{
+        }else {
             cityInput.value = "";
             // ajax
             getWeather(city);
+            
         }
-
-
     });
     function showFeedback(text) {
         feedback.classList.add('showItem');
@@ -48,15 +46,19 @@ function getWeather(city) {
     const cityTemp = document.getElementById('cityTemp');
     const cityHumidity = document.getElementById('cityHumidity');
      console.log(data);
-     // 觀察 JSON資料表內的 name
-    const {name, sys: {country}, main: {temp, humidity}} = data;
-    const {icon} =  data.weather[0];
-    result.classList.add('showItem');
-    cityName.textContent = name;
-    cityCountry.textContent = country;
-    cityTemp.textContent = temp;
-    cityHumidity.textContent = humidity
-    cityIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
-
+     if (data.message === "city not found") {
+        //console.log( data.message);
+        showFeedback("We can't find the  city ")
+     } else {
+         // 觀察 JSON資料表內的 name
+        const {name, sys: {country}, main: {temp, humidity}} = data;
+        const {icon} =  data.weather[0];
+        result.classList.add('showItem');
+        cityName.textContent = name;
+        cityCountry.textContent = country;
+        cityTemp.textContent = temp;
+        cityHumidity.textContent = humidity
+        cityIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
+     }
   }
 })()
