@@ -38,7 +38,7 @@ input:focus {
   display: none;
 }
 .results {
-  /*display: none;*/
+  display: none;
 }
 .showItem {
   display: block;

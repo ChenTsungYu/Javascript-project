@@ -4,10 +4,8 @@
     const cityInput = document.getElementById('cityInput');
     const feedback = document.querySelector('.feedback');
     const apiKey = "2435fc688f0adb7743c5e50435243297";
-    // 觀察API call
-
-
-    // class
+    
+    
     form.addEventListener("submit", event => {
         event.preventDefault();
         const city = cityInput.value;
@@ -32,7 +30,7 @@
     }
 
 function getWeather(city) { 
-   // output.innerHTML = "";
+   // 觀察API call
 
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
     // units=metric參數 作為轉換單位之用
@@ -61,13 +59,4 @@ function getWeather(city) {
     cityIcon.src = `https://openweathermap.org/img/w/${icon}.png`;
 
   }
-
-
- function displayData(data) { 
-    
-
-  }
-
-    
-
 })()
