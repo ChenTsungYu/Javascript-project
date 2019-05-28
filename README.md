@@ -20,3 +20,7 @@
 [Agency](https://chentsungyu.github.io/Javascript-project/setup-agency/index.html)<br/>
 說明: <br/>
 不用Bootstrap做一個官方機構的網站，使用jQuery及其他第三方套件(如:Magnific Popup 、NumScroller 、Owl Carousel)。
+
+[weather API](https://chentsungyu.github.io/Javascript-project/weatherApp-setup/index.html)<br/>
+說明: <br/>
+串接第三方API的氣象資料，資料來源網站是[openweathermap](https://openweathermap.org/forecast5)，將查詢的結果顯示在搜尋引擎下方。
